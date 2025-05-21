@@ -6,7 +6,7 @@
       "installGradle": true,
       "installMaven": true,
       "installAnt": true,
-      "version": "11",
+      "version": "11.0.22-tem",  // 使用明确的Temurin版本
       "jdkDistro": "temurin",
       "gradleVersion": "6.0.1",
       "mavenVersion": "3.9.5",
@@ -18,7 +18,7 @@
     "ghcr.io/balazs23/devcontainers-features/bazel:1": {
       "bazelisk": "latest"
     },
-    "ghcr.io/akhildevelops/devcontainer-features/android-cli:1": {
+    "ghcr.io/akhildevelops/devcontainer-features/android-cli:latest": {
       "PACKAGES": "platform-tools,platforms;android-29,build-tools;29.0.2",
       "acceptLicenses": true
     }
