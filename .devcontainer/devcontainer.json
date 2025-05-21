@@ -1,0 +1,27 @@
+{
+  "name": "Android Build Environment",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "android": {
+      "version": "latest",
+      "platform": "android-34",
+      "build-tools": "34.0.0",
+      "cmdline-tools": "latest",
+      "accept-licenses": true
+    },
+    "ghcr.io/devcontainers/features/gradle": {
+      "version": "8.4"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "naco-siren.gradle-language",
+        "google.android-emulator-manager"
+      ]
+    }
+  },
+  "postCreateCommand": "echo 'export ANDROID_HOME=${ANDROID_SDK_ROOT}' >> ~/.bashrc && . ~/.bashrc",
+  "remoteUser": "vscode"
+}
